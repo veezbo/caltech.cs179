@@ -3,8 +3,8 @@ CS179 Lab 6
 
 ### PROGRAM REQUIREMENTS:
 
-1) numSpheres should be no larger than blockDim (the number of threads per block). Currently, this number is set to 512 because that's the max allowed on current GPU's.
-2) numPts should be divisible by blockDim (the number of threads per block), and that is currently 512.
+1. ``numSpheres``` should be no larger than ```blockDim``` (the number of threads per block). Currently, this number is set to 512 because that's the max allowed on current GPU's.
+2. ```numPts``` should be divisible by ```blockDim``` (the number of threads per block), and that is currently 512.
 
 ### COMPILING INSTRUCTIONS:
 
