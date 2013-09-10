@@ -13,14 +13,14 @@ In the device code:
 * JuliaDist 			: Implemented as described on the recitation slides- nothing special here.
 * JuliaNormal			: Called JuliaDist on surrounding positions in 3D to find the gradient.
 * render (kernel) 		:	
-  - Created a light source from which I do diffuse color calculation.
-  - Used the standard ray-tracing algorithm to find the first intersecting position.
-    * However, I adjusted the epsilon linearly with how close the position was to the camera.
-    * Additionally, I adjusted the time step linearly with the JuliaDist of the current position.
-	* Together, the above 2 gave me a huge speed-up (compared to without their implementations) when doing any of the possible transformations.
-  - Calculated color based on ambient and diffuse coloring.
-    * Ambient color is calculated by position ( in [0, 1] ).
-    * Diffuse color is calculated with the standard NdotL factor, multiplied by the base position color.
+    - Created a light source from which I do diffuse color calculation.
+    - Used the standard ray-tracing algorithm to find the first intersecting position.
+        * However, I adjusted the epsilon linearly with how close the position was to the camera.
+        * Additionally, I adjusted the time step linearly with the JuliaDist of the current position.
+	    * Together, the above 2 gave me a huge speed-up (compared to without their implementations) when doing any of the possible transformations.
+    - Calculated color based on ambient and diffuse coloring.
+        * Ambient color is calculated by position ( in [0, 1] ).
+        * Diffuse color is calculated with the standard NdotL factor, multiplied by the base position color.
 * setfractal (kernel) 	: Done in the standard way as dictated on the recitation slides. Simply calculating JuliaDist for each of the volume points.
 
 
